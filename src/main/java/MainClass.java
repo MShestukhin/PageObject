@@ -23,20 +23,22 @@ public class MainClass {
         //add entry
         driver.get("https://igorakintev.ru/admin/");
         LoginPage log=new LoginPage(driver);
-        HomePage home=log.loginAs("selenium","super_password");
-        AddEntry entry=home.add();
-        entry.sendEntry(Title,Slug,Text_markdown,Text);
+        if(log.loginAs("selenium","super_password")){
+            HomePage home=log.submitLogin();
+            AddEntry entry=home.addEntry();
+            entry.sendEntry(Title,Slug,Text_markdown,Text);
 
-        //check entry
-        driver.navigate().to("http://igorakintev.ru/blog/");
-        CheckEntry check=new CheckEntry(driver);
-        boolean check_entry=check.findEntry(Text);
+            //check entry
+            driver.navigate().to("http://igorakintev.ru/blog/");
+            CheckEntry check=new CheckEntry(driver);
+            boolean check_entry=check.findEntry(Text);
 
-        //delete entry
-        if(check_entry) {
-            driver.navigate().to("https://igorakintev.ru/admin/blog/entry/");
-            DeleteEntry deleteEntry=new DeleteEntry(driver);
-            deleteEntry.findTitle(Title);
+                //delete entry
+            if(check_entry) {
+                driver.navigate().to("https://igorakintev.ru/admin/");
+                DeleteEntry deleteEntry=home.deleteEntry();
+                deleteEntry.findTitle(Title);
+            }
         }
         driver.quit();
     }

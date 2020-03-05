@@ -1,11 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50963745-2456-49a3-b922-78c4be5aeae2" name="Default Changelist" comment="" />
+    <list default="true" id="50963745-2456-49a3-b922-78c4be5aeae2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/AddEntryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/HomePageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LoginPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AddEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/AddEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CheckEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CheckEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DeleteEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DeleteEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/AddEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/AddEntry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/CheckEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/CheckEntry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/DeleteEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/DeleteEntry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/untitled.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MainClass.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="170" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -13,6 +38,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1YgjZlEyskiEgbuAS16UWAaBShb" />
   <component name="ProjectViewState">
@@ -22,12 +50,45 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
-  <component name="RunManager" selected="Application.MainClass">
-    <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LoginPageTest">
+    <configuration name="MainClass" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="BUNDLED" />
       <option name="MAIN_CLASS_NAME" value="MainClass" />
-      <module name="untitled" />
+      <module name="PageObject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AddEntryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PageObject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="AddEntryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PageObject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HomePageTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PageObject" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginPageTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -55,9 +116,18 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.MainClass" />
+      <item itemvalue="Maven.untitled []" />
+      <item itemvalue="JUnit.HomePageTest" />
+      <item itemvalue="JUnit.AddEntryTest" />
+      <item itemvalue="JUnit.LoginPageTest" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainClass" />
+        <item itemvalue="JUnit.LoginPageTest" />
+        <item itemvalue="JUnit.AddEntryTest" />
+        <item itemvalue="JUnit.HomePageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -75,25 +145,42 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="451" y="211" width="1084" height="785" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583372555484">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="278" y="58" width="800" height="677" key="#Project_Structure" timestamp="1583409390038">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state x="278" y="58" width="800" height="677" key="#Project_Structure/0.27.1366.741@0.27.1366.741" timestamp="1583409390038" />
+    <state x="283" y="94" width="984" height="674" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583409993874">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="283" y="94" width="984" height="674" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1583409993874" />
     <state x="451" y="211" width="1084" height="785" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1583372555484" />
-    <state width="1354" height="260" key="GridCell.Tab.0.bottom" timestamp="1583398722847">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="491" y="115" width="374" height="562" key="#com.intellij.ide.util.MemberChooser" timestamp="1583424212542">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state x="491" y="115" width="374" height="562" key="#com.intellij.ide.util.MemberChooser/0.27.1366.741@0.27.1366.741" timestamp="1583424212542" />
+    <state x="461" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583409380838">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="461" y="154" width="424" height="484" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1583409380838" />
+    <state width="1320" height="175" key="GridCell.Tab.0.bottom" timestamp="1583426098502">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1320" height="175" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1583426098502" />
     <state width="1354" height="260" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1583398722847" />
-    <state width="1354" height="260" key="GridCell.Tab.0.center" timestamp="1583398722846">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1320" height="175" key="GridCell.Tab.0.center" timestamp="1583426098501">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state width="1320" height="175" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1583426098501" />
     <state width="1354" height="260" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1583398722846" />
-    <state width="1354" height="260" key="GridCell.Tab.0.left" timestamp="1583398722846">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1320" height="175" key="GridCell.Tab.0.left" timestamp="1583426098501">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state width="1320" height="175" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1583426098501" />
     <state width="1354" height="260" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1583398722846" />
-    <state width="1354" height="260" key="GridCell.Tab.0.right" timestamp="1583398722846">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state width="1320" height="175" key="GridCell.Tab.0.right" timestamp="1583426098501">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state width="1320" height="175" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1583426098501" />
     <state width="1354" height="260" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1583398722846" />
     <state width="1354" height="322" key="GridCell.Tab.1.bottom" timestamp="1583372773599">
       <screen x="67" y="27" width="1853" height="1053" />
@@ -111,6 +198,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state width="1354" height="322" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1583372773599" />
+    <state x="172" y="31" key="SettingsEditor" timestamp="1583409913537">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="172" y="31" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1583409913537" />
     <state x="649" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1583371197415">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
@@ -119,13 +210,20 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="302" y="211" width="1372" height="683" key="new project wizard/67.27.1853.1053@67.27.1853.1053" timestamp="1583372771340" />
-    <state x="657" y="253" key="run.anything.popup" timestamp="1583375051830">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="435" y="186" key="run.anything.popup" timestamp="1583409779616">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state x="435" y="186" key="run.anything.popup/0.27.1366.741@0.27.1366.741" timestamp="1583409779616" />
     <state x="657" y="253" key="run.anything.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1583375051830" />
     <state x="656" y="272" width="672" height="678" key="search.everywhere.popup" timestamp="1583379090570">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="656" y="272" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053@67.27.1853.1053" timestamp="1583379090570" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PageObject$MainClass.ic" NAME="MainClass Coverage Results" MODIFIED="1583423716874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/PageObject$LoginPageTest.ic" NAME="LoginPageTest Coverage Results" MODIFIED="1583426098482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/PageObject$AddEntryTest.ic" NAME="AddEntryTest Coverage Results" MODIFIED="1583424658143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/PageObject$HomePageTest.ic" NAME="HomePageTest Coverage Results" MODIFIED="1583422978377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

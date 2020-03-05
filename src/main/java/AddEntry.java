@@ -9,12 +9,14 @@ public class AddEntry {
     By text_markdown = By.id("id_text_markdown");
     By text = By.id("id_text");
     By submit = By.name("_save");
+    public String pageTitle;
 
     public AddEntry(WebDriver driver) {
         this.driver = driver;
-//        if (!"Панельуправления".equals(driver.getTitle())) {
-//            throw new IllegalStateException("This is not the login page");
-//        }
+        pageTitle=driver.getTitle();
+        if (!"Добавить entry | Панель управления".equals(pageTitle)) {
+            throw new IllegalStateException("This is not the login page");
+        }
     }
 
     public AddEntry typeTitle(String title_str) {
@@ -30,6 +32,16 @@ public class AddEntry {
     public AddEntry typeTextMarkdown(String text_markdown_str) {
         driver.findElement(text_markdown).sendKeys(text_markdown_str);
         return this;
+    }
+
+    public String entryTitleEmptyError() {
+        String errStr=driver.findElement(By.cssSelector("#entry_form > div > fieldset > div.form-row.errors.field-title > ul > li")).getText();
+        return errStr;
+    }
+
+    public String entrySlugEmptyError() {
+        String errStr=driver.findElement(By.cssSelector("#entry_form > div > fieldset > div.form-row.errors.field-slug > ul > li")).getText();
+        return errStr;
     }
 
     public AddEntry typeText(String text_str) {
@@ -48,15 +60,5 @@ public class AddEntry {
         typeTextMarkdown(text_markdown_str);
         typeText(text_str);
         return submit();
-    }
-
-    public AddEntry add(){
-//        System.out.println(driver.findElement(By.xpath("//*[@id='module_2']/div/ul[1]/li[1]/ul/li[1]/a")).getAttribute("href"));
-//        driver.navigate().to("https://igorakintev.ru/admin/blog/entry/add/");
-        System.out.println("1");
-
-//        driver.findElement(By.cssSelector("#module_2 > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1)")).click();
-//        System.out.println("sdfa");
-        return new AddEntry(driver);
     }
 }

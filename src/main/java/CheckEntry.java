@@ -7,9 +7,6 @@ public class CheckEntry {
     private final WebDriver driver;
     public CheckEntry(WebDriver driver) {
         this.driver = driver;
-//        if (!"Панельуправления".equals(driver.getTitle())) {
-//            throw new IllegalStateException("This is not the login page");
-//        }
     }
 
     public boolean findEntry(String entry_name){

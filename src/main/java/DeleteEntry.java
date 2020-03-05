@@ -1,13 +1,17 @@
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 
 public class DeleteEntry {
     private final WebDriver driver;
+    public String pageTitle;
     public DeleteEntry(WebDriver driver) {
         this.driver = driver;
-//        if (!"Панельуправления".equals(driver.getTitle())) {
-//            throw new IllegalStateException("This is not the login page");
-//        }
+        pageTitle=driver.getTitle();
+        System.out.println(pageTitle);
+        if (!"Выберите entry для изменения | Панель управления".equals(pageTitle)) {
+            throw new IllegalStateException("This is not the login page");
+        }
     }
 
     public DeleteEntry confirm(){
@@ -21,7 +25,11 @@ public class DeleteEntry {
     }
 
     public DeleteEntry findTitle(String str){
-        driver.findElement(By.xpath("//a[text()='"+str+"']")).click();
+        try {
+            driver.findElement(By.xpath("//a[text()='"+str+"']")).click();
+        } catch (NoSuchElementException e) {
+            return this;
+        }
         return delete();
     }
 }

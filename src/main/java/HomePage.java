@@ -4,23 +4,22 @@ import org.openqa.selenium.WebElement;
 public class HomePage {
 
     private final WebDriver driver;
-    By title = By.id("id_title");
-    By slug = By.id("id_slug");
-    By text_markdown = By.id("id_text_markdown");
-    By text = By.id("id_text");
-    By submit = By.xpath("//input[@type='submit']");
-
+    public String pageTitle;
     public HomePage(WebDriver driver) {
         this.driver = driver;
-//        if (!"Панельуправления".equals(driver.getTitle())) {
-//            throw new IllegalStateException("This is not the login page");
-//        }
+        pageTitle=driver.getTitle();
+        if (!"Войти | Панель управления".equals(driver.getTitle())) {
+
+        }
     }
 
-    public AddEntry add(){//        driver.navigate().to("https://igorakintev.ru/admin/blog/entry/add/");
-
+    public AddEntry addEntry(){//        driver.navigate().to("https://igorakintev.ru/admin/blog/entry/add/");
         driver.findElement(By.cssSelector("#module_2 > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1)")).click();
-//        System.out.println("sdfa");
         return new AddEntry(driver);
+    }
+
+    public DeleteEntry deleteEntry(){//        driver.navigate().to("https://igorakintev.ru/admin/blog/entry/add/");
+        driver.findElement(By.cssSelector("#module_2 > div:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > a:nth-child(1)")).click();
+        return new DeleteEntry(driver);
     }
 }

@@ -10,10 +10,6 @@ public class LoginPage {
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
-
-//        if (!"Login".equals(driver.getTitle())) {
-//            throw new IllegalStateException("This is not the login page");
-//        }
     }
 
     public LoginPage typeUsername(String username) {
@@ -26,19 +22,36 @@ public class LoginPage {
         return this;
     }
 
+    public String errLoginInputText() {
+        String errStr=driver.findElement(By.cssSelector("#login-form > div:nth-child(2) > ul > li")).getText();
+        return errStr;
+    }
+
+    public String  errPswdInputText() {
+        String errStr=driver.findElement(By.cssSelector("#login-form > div:nth-child(3) > ul > li")).getText();
+        return errStr;
+    }
+
+    public String  errLoginPswd() {
+        String errStr=driver.findElement(By.cssSelector(".errornote")).getText();
+        return errStr;
+    }
+
     public HomePage submitLogin() {
         driver.findElement(loginButtonLocator).submit();
         return new HomePage(driver);
     }
-//
-//    public LoginPage submitLoginExpectingFailure() {
-//        driver.findElement(loginButtonLocator).submit();
-//        return new LoginPage(driver);
-//    }
-//
-    public HomePage loginAs(String username, String password) {
-        typeUsername(username);
-        typePassword(password);
-        return submitLogin();
+
+    public boolean loginAs(String username, String password) {
+        if(username.isEmpty() || password.isEmpty()) {
+            typeUsername(username);
+            typePassword(password);
+            return false;
+        }
+        else {
+            typeUsername(username);
+            typePassword(password);
+            return true;
+        }
     }
 }
